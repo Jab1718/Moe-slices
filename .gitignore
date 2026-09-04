@@ -5,6 +5,8 @@
 *.pth
 *.onnx
 qwen3.8_flash_bf16_73gb/
+qwen3.8_flash_coder_85gb_bf16/
+qwen3.8_flash_coder_160exp*/
 qwen3.8_raw_cache/
 qwen3.8_flash_raw_extracted/
 qwen3.8_flash_finetuned_26gb

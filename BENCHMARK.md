@@ -128,15 +128,15 @@ def binary_search(arr: list[int], target: int) -> int:
 | :--- | :--- | :--- | :--- | :--- |
 | **1x NVIDIA RTX 5000 Ada (32GB)** | `qwen3.8-flash-coder-selective-int8` | PyTorch / vLLM | **~19.72 GB (61%)** | **35 - 55 tokens/s** |
 | **1x NVIDIA RTX 4090 (24GB)** | `qwen3.8-flash-coder-selective-int8` | vLLM / llama.cpp | **~19.72 GB (82%)** | **45 - 65 tokens/s** |
-| **3x NVIDIA RTX 5000 Ada** | `qwen3.8-flash-coder-26gb` (BF16) | Native PyTorch Server | **8.5GB / GPU** | **10 - 20 tokens/s** |
-| **Apple Mac Studio (M2/M3 Max 64GB)**| `qwen3.8-flash-coder-26gb` (BF16) | MLX / Metal | **~24.5 GB Unified** | **25 - 40 tokens/s** |
+| **3x NVIDIA RTX 5000 Ada** | `qwen3.8-flash-coder-85gb-bf16` (BF16) | Native PyTorch Server | **~27.3 GB / GPU** | **15 - 25 tokens/s** |
+| **Apple Mac Studio (M2/M3 Max 128GB)**| `qwen3.8-flash-coder-85gb-bf16` (BF16) | MLX / Metal | **~85.2 GB Unified** | **20 - 35 tokens/s** |
 
 ---
 
 ## 📦 Published Hugging Face Hub Repositories
 
-1. 🚀 **BF16 Native Precision Model:**
-   * **Repository:** [`https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb`](https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb)
+1. 🚀 **BF16 Native Precision Model (85.24 GB, 160 Experts):**
+   * **Repository:** [`https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16`](https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16)
    * **Use Case:** Highest possible precision for multi-GPU workstations, clusters, and fine-tuning.
 
 2. ⚡ **Selective INT8 Quantized Model (~19.7 GB):**
@@ -148,7 +148,7 @@ def binary_search(arr: list[int], target: int) -> int:
 ## 🎯 Báo Cáo Nghiệm Thu 100 Bài Sandbox & Kiểm Định Nơ-ron (Neuron Attribution Analysis)
 
 ### 1. Thông số Thực thi Thực tế (2026-09-04)
-* **Mô hình kiểm thử:** `qwen3.8_flash_bf16_73gb` (160 experts/layer, 81.92 GB BF16, 2 Shards).
+* **Mô hình kiểm thử:** `qwen3.8_flash_coder_85gb_bf16` (160 experts/layer, 85.24 GB BF16, 2 Shards).
 * **Hạ tầng thực thi:** 3x NVIDIA RTX 5000 Ada (Phân bổ Dynamic 14-17-17 trên `CUDA:0, 2, 3`, an toàn 100%, không chạm GPU 1).
 * **Thời gian thực thi:** **1,423.52 giây (~23.7 phút)** (trung bình 14.24s / task).
 * **Tổng số bài kiểm tra:** 100 bài sandbox (50 Python Algorithms, 30 Systems Multi-Language, 20 Coding Agent).
