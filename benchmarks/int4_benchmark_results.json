@@ -1,0 +1,91 @@
+{
+  "pass_rate": 44.44444444444444,
+  "passed": 4,
+  "total": 9,
+  "vram_gb": 37.235734939575195,
+  "avg_ttft_ms": 593.2897276265224,
+  "avg_tps": 2.5263013171155673,
+  "details": [
+    {
+      "name": "Python/BinarySearch",
+      "category": "Algorithm/Python",
+      "status": true,
+      "ttft": 349.66151614207774,
+      "tps": 2.8599086654811354,
+      "tokens": 120,
+      "output_snippet": "    left, right = 0, len(arr) - 1     while mid := arr[mid]         if arr[mid] == target:             return mid       "
+    },
+    {
+      "name": "Python/FibonacciDP",
+      "category": "Algorithm/Python",
+      "status": true,
+      "ttft": 351.47765672494035,
+      "tps": 2.845131065564662,
+      "tokens": 120,
+      "output_snippet": "    return fibonacci(n, memo=n)     if n in memo:         return memo[n]     else:         return fibonacci(n, memo[n]) "
+    },
+    {
+      "name": "Python/ValidParentheses",
+      "category": "Algorithm/Python",
+      "status": true,
+      "ttft": 350.85990062507335,
+      "tps": 2.8501404640953645,
+      "tokens": 120,
+      "output_snippet": "    for idx, char, n = 0, list[str, len(s)]         if char == \"}\":             stack.append(s[idx:])             return"
+    },
+    {
+      "name": "Rust/AsyncTokioChannel",
+      "category": "Algorithm/Rust",
+      "status": false,
+      "ttft": 355.3438639699016,
+      "tps": 2.814175511089456,
+      "tokens": 100,
+      "output_snippet": "    tx.send(msg, {}, tokio::sync()) } }; ``` If `tokio::sync::mpsc::Sender::send()` instead blocked mpsc mpsc mpsc mpsc "
+    },
+    {
+      "name": "CPP/ThreadSafeQueue",
+      "category": "Algorithm/CPP",
+      "status": true,
+      "ttft": 356.20076767052524,
+      "tps": 2.8074055161076164,
+      "tokens": 100,
+      "output_snippet": "        m.lock();         q.push();         m.unlock(); } }; sync mutex; return;  /* Two mutexes for two different stack"
+    },
+    {
+      "name": "TypeScript/AsyncDebounce",
+      "category": "Algorithm/TypeScript",
+      "status": false,
+      "ttft": 351.3486740742034,
+      "tps": 2.846175533848191,
+      "tokens": 120,
+      "output_snippet": "    // Use TypeScript-specific stack instead of computing map to list     return async () -> {         if (timeoutId !=="
+    },
+    {
+      "name": "Agent/GrepSearchCall",
+      "category": "CodingAgent/ToolCall",
+      "status": false,
+      "ttft": 388.4202831355982,
+      "tps": 2.5745308456275913,
+      "tokens": 44,
+      "output_snippet": "`grep_search(Query: str, SearchPath: str)` Call tool in JSON format: `{\"tool\": \"grep_search\", \"parameters\": {\"Query\": \"."
+    },
+    {
+      "name": "Agent/SelfCorrectionDebug",
+      "category": "CodingAgent/SelfCorrection",
+      "status": false,
+      "ttft": 365.6997783004772,
+      "tps": 2.734483473430903,
+      "tokens": 100,
+      "output_snippet": "def add_age(current_age, increment={int, str}, memo={list, tuple}, sync={set, mpm}, hash={set, mpm}, sort={set, mpm}, br"
+    },
+    {
+      "name": "Agent/UnifiedDiffGeneration",
+      "category": "CodingAgent/DiffEdit",
+      "status": false,
+      "ttft": 2470.595107995905,
+      "tps": 0.40476077879518635,
+      "tokens": 1,
+      "output_snippet": ""
+    }
+  ]
+}

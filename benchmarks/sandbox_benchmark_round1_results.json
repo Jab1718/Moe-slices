@@ -1,0 +1,1334 @@
+{
+  "model_path": "./qwen3.8_flash_bf16_73gb",
+  "fidelity_rate_pct": 61.0,
+  "absolute_pass_rate_pct": 61.0,
+  "total_passed": 61,
+  "baseline_solvable": 100,
+  "solvable_passed": 61,
+  "targeted_attribution_list": [
+    {
+      "id": "Py/InsertInterval",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/SearchRotated",
+      "category": "Python/Algorithm",
+      "error": "TimeoutExpired (>3.0s)"
+    },
+    {
+      "id": "Py/MatrixSearch",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'n' is not defined"
+    },
+    {
+      "id": "Py/FindMedianSortedArrays",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ClimbingStairs",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: module 'math' has no attribute 'combinations'"
+    },
+    {
+      "id": "Py/LongestIncreasingSubseq",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/LongestCommonSubseq",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/EditDistance",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ValidParentheses",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/BinaryTreeInorder",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'TreeNode' is not defined"
+    },
+    {
+      "id": "Py/BinaryTreeMaxDepth",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'TreeNode' is not defined"
+    },
+    {
+      "id": "Py/InvertBinaryTree",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'TreeNode' is not defined"
+    },
+    {
+      "id": "Py/ValidateBST",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'TreeNode' is not defined"
+    },
+    {
+      "id": "Py/LowestCommonAncestor",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'TreeNode' is not defined"
+    },
+    {
+      "id": "Py/GraphDFS",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/DijkstraShortestPath",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: module 'heapq' has no attribute 'pop'"
+    },
+    {
+      "id": "Py/TriePrefixTree",
+      "category": "Python/Algorithm",
+      "error": "IndentationError: unindent does not match any outer indentation level"
+    },
+    {
+      "id": "Py/ValidPalindrome",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/GroupAnagrams",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: 'str' object has no attribute 'sorted'"
+    },
+    {
+      "id": "Py/LongestPalindromicSubstring",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ReverseWords",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/SievePrimes",
+      "category": "Python/Algorithm",
+      "error": "IndentationError: expected an indented block after 'for' statement on line 8"
+    },
+    {
+      "id": "Py/SpiralMatrix",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Rust/EnumPatternMatch",
+      "category": "Rust",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "CPP/BinarySearchVector",
+      "category": "CPP",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Go/BinarySearchSlice",
+      "category": "Go",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Go/SyncMutexSafeMap",
+      "category": "Go",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/ToolCall/ReadFile",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/ToolCall/WriteFile",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/ToolCall/RunCommand",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/ToolCall/ListDir",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Debug/TypeErrorConcat",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Debug/IndexOutOfBounds",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Debug/ZeroDivision",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Debug/KeyErrorDict",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Debug/MutableDefaultArg",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Debug/RecursionDepth",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Diff/AddContextManager",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    },
+    {
+      "id": "Agent/Diff/AsyncFastAPIRoute",
+      "category": "CodingAgent",
+      "error": "Verifier predicate returned False"
+    }
+  ],
+  "skipped_baseline_fails": [],
+  "category_stats": {
+    "Python/Algorithm": {
+      "passed": 27,
+      "total": 50
+    },
+    "Rust": {
+      "passed": 9,
+      "total": 10
+    },
+    "CPP": {
+      "passed": 9,
+      "total": 10
+    },
+    "Go": {
+      "passed": 3,
+      "total": 5
+    },
+    "TypeScript": {
+      "passed": 5,
+      "total": 5
+    },
+    "CodingAgent": {
+      "passed": 8,
+      "total": 20
+    }
+  },
+  "detailed_results": [
+    {
+      "id": "Py/BinarySearch",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 18.65983091108501,
+      "tps": 5.948606958386725
+    },
+    {
+      "id": "Py/LinearSearch",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.233758153859526,
+      "tps": 5.667517165053003
+    },
+    {
+      "id": "Py/TwoSumSorted",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 21.153337249998003,
+      "tps": 6.003780798228988
+    },
+    {
+      "id": "Py/QuickSelect",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 9.447878755861893,
+      "tps": 5.609724824963105
+    },
+    {
+      "id": "Py/MergeIntervals",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 19.546323224902153,
+      "tps": 6.0369409961289895
+    },
+    {
+      "id": "Py/InsertInterval",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 25.238280771067366,
+      "tps": 6.0622195857094985
+    },
+    {
+      "id": "Py/PeakElement",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 15.983073516981676,
+      "tps": 5.943787964127457
+    },
+    {
+      "id": "Py/SearchRotated",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "TimeoutExpired (>3.0s)",
+      "latency_s": 25.148278509033844,
+      "tps": 6.123679596783519
+    },
+    {
+      "id": "Py/MatrixSearch",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "NameError: name 'n' is not defined",
+      "latency_s": 22.413997462950647,
+      "tps": 6.067636985540042
+    },
+    {
+      "id": "Py/FindMedianSortedArrays",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 17.728072972036898,
+      "tps": 5.9792172655876055
+    },
+    {
+      "id": "Py/FibonacciMemo",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 17.51930081518367,
+      "tps": 5.993389867990528
+    },
+    {
+      "id": "Py/ClimbingStairs",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AttributeError: module 'math' has no attribute 'combinations'",
+      "latency_s": 10.15436102100648,
+      "tps": 5.711831584480257
+    },
+    {
+      "id": "Py/CoinChange",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 20.18925999593921,
+      "tps": 6.042816825606219
+    },
+    {
+      "id": "Py/LongestIncreasingSubseq",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 15.0021978658624,
+      "tps": 5.932464082647523
+    },
+    {
+      "id": "Py/HouseRobber",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 12.073025796096772,
+      "tps": 5.798049402216229
+    },
+    {
+      "id": "Py/LongestCommonSubseq",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 23.427774257957935,
+      "tps": 6.103866224143159
+    },
+    {
+      "id": "Py/UniquePathsGrid",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.064691398991272,
+      "tps": 5.66336291301617
+    },
+    {
+      "id": "Py/WordBreak",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 20.384197215083987,
+      "tps": 6.083143657393677
+    },
+    {
+      "id": "Py/EditDistance",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 20.188001265050843,
+      "tps": 5.993659224178539
+    },
+    {
+      "id": "Py/MaxSubarrayKadane",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 13.862647520843893,
+      "tps": 5.843039713605089
+    },
+    {
+      "id": "Py/ValidParentheses",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 14.219519410980865,
+      "tps": 5.907372645458885
+    },
+    {
+      "id": "Py/MinStack",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 13.02541821799241,
+      "tps": 5.757972507661996
+    },
+    {
+      "id": "Py/DailyTemperatures",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 18.76436345698312,
+      "tps": 5.968760957799473
+    },
+    {
+      "id": "Py/BinaryTreeInorder",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "NameError: name 'TreeNode' is not defined",
+      "latency_s": 14.823110840050504,
+      "tps": 5.801751125521975
+    },
+    {
+      "id": "Py/BinaryTreeMaxDepth",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "NameError: name 'TreeNode' is not defined",
+      "latency_s": 8.398106371983886,
+      "tps": 5.358350800380449
+    },
+    {
+      "id": "Py/InvertBinaryTree",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "NameError: name 'TreeNode' is not defined",
+      "latency_s": 8.536952171009034,
+      "tps": 5.388339899128542
+    },
+    {
+      "id": "Py/ValidateBST",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "NameError: name 'TreeNode' is not defined",
+      "latency_s": 17.997329886071384,
+      "tps": 5.889762574282546
+    },
+    {
+      "id": "Py/LowestCommonAncestor",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "NameError: name 'TreeNode' is not defined",
+      "latency_s": 15.43992303404957,
+      "tps": 5.764277438671736
+    },
+    {
+      "id": "Py/LevelOrderTraversal",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 26.10814737016335,
+      "tps": 6.013448513754796
+    },
+    {
+      "id": "Py/GraphBFS",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 23.516140285879374,
+      "tps": 6.038405889476092
+    },
+    {
+      "id": "Py/GraphDFS",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 15.988328902050853,
+      "tps": 5.941834233083244
+    },
+    {
+      "id": "Py/TopologicalSort",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 28.155247712042183,
+      "tps": 6.144502856780293
+    },
+    {
+      "id": "Py/DijkstraShortestPath",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AttributeError: module 'heapq' has no attribute 'pop'",
+      "latency_s": 24.717213843017817,
+      "tps": 6.068645153643496
+    },
+    {
+      "id": "Py/TriePrefixTree",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "IndentationError: unindent does not match any outer indentation level",
+      "latency_s": 19.22518352395855,
+      "tps": 5.773677003481973
+    },
+    {
+      "id": "Py/LRUCache",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 26.288962753955275,
+      "tps": 5.972088038215914
+    },
+    {
+      "id": "Py/ValidAnagram",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 8.252078662160784,
+      "tps": 5.453171478641344
+    },
+    {
+      "id": "Py/ValidPalindrome",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 8.991374552017078,
+      "tps": 5.560885013825084
+    },
+    {
+      "id": "Py/LongestSubstringNoRepeat",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 18.422953168861568,
+      "tps": 5.970812550613315
+    },
+    {
+      "id": "Py/GroupAnagrams",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AttributeError: 'str' object has no attribute 'sorted'",
+      "latency_s": 12.403671386186033,
+      "tps": 5.724111659316667
+    },
+    {
+      "id": "Py/LongestPalindromicSubstring",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 23.19585531298071,
+      "tps": 6.03556101342183
+    },
+    {
+      "id": "Py/ReverseWords",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 7.696806407999247,
+      "tps": 5.456808677992685
+    },
+    {
+      "id": "Py/StringCompression",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 17.696643689181656,
+      "tps": 5.93332847991898
+    },
+    {
+      "id": "Py/SingleNumber",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 8.758755428018048,
+      "tps": 5.480230655425614
+    },
+    {
+      "id": "Py/CountingBits",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 8.259038122138008,
+      "tps": 5.448576375907428
+    },
+    {
+      "id": "Py/ReverseBits",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 12.158683330984786,
+      "tps": 5.757202329763316
+    },
+    {
+      "id": "Py/PowerOfTwo",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 9.067693466087803,
+      "tps": 5.514081412984968
+    },
+    {
+      "id": "Py/SievePrimes",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "IndentationError: expected an indented block after 'for' statement on line 8",
+      "latency_s": 18.015749956015497,
+      "tps": 5.939247617292361
+    },
+    {
+      "id": "Py/GCDLcm",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.476865616859868,
+      "tps": 5.631455261300136
+    },
+    {
+      "id": "Py/MatrixRotate90",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 14.538288454059511,
+      "tps": 5.84663045231198
+    },
+    {
+      "id": "Py/SpiralMatrix",
+      "category": "Python/Algorithm",
+      "lang": "python",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "AssertionError",
+      "latency_s": 23.294240357121453,
+      "tps": 6.010069349919778
+    },
+    {
+      "id": "Rust/AsyncMPSC",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.100874688010663,
+      "tps": 5.445072996032989
+    },
+    {
+      "id": "Rust/BinarySearch",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 18.154372760793194,
+      "tps": 5.893896826393301
+    },
+    {
+      "id": "Rust/SafeMutex",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 9.37764609605074,
+      "tps": 5.545101560390411
+    },
+    {
+      "id": "Rust/CustomIterator",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 14.465811463072896,
+      "tps": 5.737666373702948
+    },
+    {
+      "id": "Rust/OptionMap",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 6.776104256045073,
+      "tps": 5.312787206289486
+    },
+    {
+      "id": "Rust/StringReversal",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 7.579173556994647,
+      "tps": 5.409560777528578
+    },
+    {
+      "id": "Rust/HashMapWordCount",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 13.187293955124915,
+      "tps": 5.763123219867597
+    },
+    {
+      "id": "Rust/AsyncHttpClient",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.136787963099778,
+      "tps": 5.623082993103241
+    },
+    {
+      "id": "Rust/EnumPatternMatch",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 82.33913198695518,
+      "tps": 6.218185541245627
+    },
+    {
+      "id": "Rust/TraitImplementation",
+      "category": "Rust",
+      "lang": "rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 6.829291744157672,
+      "tps": 5.124982400984967
+    },
+    {
+      "id": "CPP/ThreadSafeQueue",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 5.453689851099625,
+      "tps": 4.767414486314735
+    },
+    {
+      "id": "CPP/BinarySearchVector",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 19.146835386985913,
+      "tps": 5.953986530718581
+    },
+    {
+      "id": "CPP/SmartPointerFactory",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 4.178108956897631,
+      "tps": 4.308169122847751
+    },
+    {
+      "id": "CPP/StringSplitView",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 29.186814991990104,
+      "tps": 6.0986442011178505
+    },
+    {
+      "id": "CPP/CustomComparatorSort",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 8.203961005900055,
+      "tps": 5.485155276534991
+    },
+    {
+      "id": "CPP/LRUNodeStructure",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 9.204307549865916,
+      "tps": 5.432239169445004
+    },
+    {
+      "id": "CPP/VariadicSumTemplate",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 5.803687512874603,
+      "tps": 5.169127375216108
+    },
+    {
+      "id": "CPP/AsyncFuturePromise",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 9.110044628148898,
+      "tps": 5.59821626366312
+    },
+    {
+      "id": "CPP/ConceptsConstraint",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 7.019626658875495,
+      "tps": 5.270935592168258
+    },
+    {
+      "id": "CPP/AtomicCounter",
+      "category": "CPP",
+      "lang": "cpp",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 7.029594617895782,
+      "tps": 5.263461410108379
+    },
+    {
+      "id": "Go/WorkerPoolChannels",
+      "category": "Go",
+      "lang": "go",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 8.518704739864916,
+      "tps": 5.3998819544401115
+    },
+    {
+      "id": "Go/BinarySearchSlice",
+      "category": "Go",
+      "lang": "go",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 16.88869578181766,
+      "tps": 5.861909130164049
+    },
+    {
+      "id": "Go/StructJSONMarshal",
+      "category": "Go",
+      "lang": "go",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 6.831699064932764,
+      "tps": 5.123176484698461
+    },
+    {
+      "id": "Go/HTTPHandlerEndpoint",
+      "category": "Go",
+      "lang": "go",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 6.098700231872499,
+      "tps": 5.083050292911674
+    },
+    {
+      "id": "Go/SyncMutexSafeMap",
+      "category": "Go",
+      "lang": "go",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 8.934816581895575,
+      "tps": 5.372242346559342
+    },
+    {
+      "id": "TypeScript/GenericDebounce",
+      "category": "TypeScript",
+      "lang": "typescript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 14.75815776688978,
+      "tps": 5.6917673145123615
+    },
+    {
+      "id": "TypeScript/PromiseRetry",
+      "category": "TypeScript",
+      "lang": "typescript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 18.896093079820275,
+      "tps": 5.980072151564294
+    },
+    {
+      "id": "TypeScript/DeepCloneGeneric",
+      "category": "TypeScript",
+      "lang": "typescript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 5.322962484089658,
+      "tps": 5.072363384243838
+    },
+    {
+      "id": "TypeScript/EventEmitterType",
+      "category": "TypeScript",
+      "lang": "typescript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 12.062234671087936,
+      "tps": 5.637429701396021
+    },
+    {
+      "id": "TypeScript/ZodLikeValidator",
+      "category": "TypeScript",
+      "lang": "typescript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 8.498320484999567,
+      "tps": 5.2951639184977495
+    },
+    {
+      "id": "Agent/ToolCall/Grep",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 4.838408283889294,
+      "tps": 5.373668048348377
+    },
+    {
+      "id": "Agent/ToolCall/ReadFile",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 6.565415848977864,
+      "tps": 5.330964679937063
+    },
+    {
+      "id": "Agent/ToolCall/WriteFile",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 5.401846066117287,
+      "tps": 5.368535060986009
+    },
+    {
+      "id": "Agent/ToolCall/RunCommand",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 3.6544969419483095,
+      "tps": 5.199073990706528
+    },
+    {
+      "id": "Agent/ToolCall/ListDir",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 3.958082253113389,
+      "tps": 5.305599696287667
+    },
+    {
+      "id": "Agent/Debug/TypeErrorConcat",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 5.26053436496295,
+      "tps": 5.512747943089284
+    },
+    {
+      "id": "Agent/Debug/IndexOutOfBounds",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 4.831511031137779,
+      "tps": 5.588313847571146
+    },
+    {
+      "id": "Agent/Debug/ZeroDivision",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 6.431445874972269,
+      "tps": 5.7529831890499326
+    },
+    {
+      "id": "Agent/Debug/KeyErrorDict",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 4.839236735831946,
+      "tps": 5.57939226243666
+    },
+    {
+      "id": "Agent/Debug/MutableDefaultArg",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 6.648399760946631,
+      "tps": 5.715661116411173
+    },
+    {
+      "id": "Agent/Debug/AsyncMissingAwait",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 5.369953087065369,
+      "tps": 5.586640984306015
+    },
+    {
+      "id": "Agent/Debug/RecursionDepth",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 5.5626274067908525,
+      "tps": 5.572906062727699
+    },
+    {
+      "id": "Agent/Diff/AddLogging",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.806269034044817,
+      "tps": 5.922488122252923
+    },
+    {
+      "id": "Agent/Diff/AddTypeHints",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 6.115796986967325,
+      "tps": 5.7228845356679585
+    },
+    {
+      "id": "Agent/Diff/ExtractHelperMethod",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.108028928050771,
+      "tps": 5.9358753746236435
+    },
+    {
+      "id": "Agent/Diff/AddContextManager",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 5.532153052976355,
+      "tps": 5.603604908096619
+    },
+    {
+      "id": "Agent/Diff/FIMCompletion",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 10.111531243892387,
+      "tps": 6.032716363987452
+    },
+    {
+      "id": "Agent/Diff/DocstringGeneration",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 83.11718816892244,
+      "tps": 6.159977391913711
+    },
+    {
+      "id": "Agent/Diff/SQLInjectionFix",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "error_detail": "",
+      "latency_s": 5.75853525986895,
+      "tps": 5.209658124188117
+    },
+    {
+      "id": "Agent/Diff/AsyncFastAPIRoute",
+      "category": "CodingAgent",
+      "lang": "json",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "FAIL (Trace Deficit)",
+      "error_detail": "Verifier predicate returned False",
+      "latency_s": 8.843299647094682,
+      "tps": 5.767078130927656
+    }
+  ]
+}

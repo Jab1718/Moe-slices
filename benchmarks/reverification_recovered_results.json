@@ -1,0 +1,181 @@
+{
+  "previously_failed_count": 39,
+  "recovered_count": 6,
+  "recovered_ids": [
+    "Py/BinaryTreeMaxDepth",
+    "Py/InvertBinaryTree",
+    "Agent/ToolCall/ReadFile",
+    "Agent/ToolCall/WriteFile",
+    "Agent/ToolCall/RunCommand",
+    "Agent/ToolCall/ListDir"
+  ],
+  "still_failed_count": 33,
+  "still_failed_details": [
+    {
+      "id": "Py/InsertInterval",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/SearchRotated",
+      "category": "Python/Algorithm",
+      "error": "TimeoutExpired (>3.0s)"
+    },
+    {
+      "id": "Py/MatrixSearch",
+      "category": "Python/Algorithm",
+      "error": "NameError: name 'n' is not defined"
+    },
+    {
+      "id": "Py/FindMedianSortedArrays",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ClimbingStairs",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: module 'math' has no attribute 'combinations'"
+    },
+    {
+      "id": "Py/LongestIncreasingSubseq",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/LongestCommonSubseq",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/EditDistance",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ValidParentheses",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/BinaryTreeInorder",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ValidateBST",
+      "category": "Python/Algorithm",
+      "error": "TypeError: '>' not supported between instances of 'int' and 'NoneType'"
+    },
+    {
+      "id": "Py/LowestCommonAncestor",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: 'NoneType' object has no attribute 'val'"
+    },
+    {
+      "id": "Py/GraphDFS",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/DijkstraShortestPath",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: module 'heapq' has no attribute 'pop'"
+    },
+    {
+      "id": "Py/TriePrefixTree",
+      "category": "Python/Algorithm",
+      "error": "IndentationError: unindent does not match any outer indentation level"
+    },
+    {
+      "id": "Py/ValidPalindrome",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/GroupAnagrams",
+      "category": "Python/Algorithm",
+      "error": "AttributeError: 'str' object has no attribute 'sorted'"
+    },
+    {
+      "id": "Py/LongestPalindromicSubstring",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/ReverseWords",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Py/SievePrimes",
+      "category": "Python/Algorithm",
+      "error": "IndentationError: expected an indented block after 'for' statement on line 8"
+    },
+    {
+      "id": "Py/SpiralMatrix",
+      "category": "Python/Algorithm",
+      "error": "AssertionError"
+    },
+    {
+      "id": "Rust/EnumPatternMatch",
+      "category": "Rust",
+      "error": ""
+    },
+    {
+      "id": "CPP/BinarySearchVector",
+      "category": "CPP",
+      "error": ""
+    },
+    {
+      "id": "Go/BinarySearchSlice",
+      "category": "Go",
+      "error": ""
+    },
+    {
+      "id": "Go/SyncMutexSafeMap",
+      "category": "Go",
+      "error": ""
+    },
+    {
+      "id": "Agent/Debug/TypeErrorConcat",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Debug/IndexOutOfBounds",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Debug/ZeroDivision",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Debug/KeyErrorDict",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Debug/MutableDefaultArg",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Debug/RecursionDepth",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Diff/AddContextManager",
+      "category": "CodingAgent",
+      "error": ""
+    },
+    {
+      "id": "Agent/Diff/AsyncFastAPIRoute",
+      "category": "CodingAgent",
+      "error": ""
+    }
+  ],
+  "new_adjusted_pass_rate_pct": 67
+}

@@ -1,0 +1,980 @@
+{
+  "model_path": "./qwen3.8_flash_bf16_73gb",
+  "fidelity_rate_pct": 33.0,
+  "absolute_pass_rate_pct": 33.0,
+  "total_passed": 33,
+  "baseline_solvable": 100,
+  "solvable_passed": 33,
+  "targeted_attribution_list": [
+    "Py/BinarySearch",
+    "Py/LinearSearch",
+    "Py/TwoSumSorted",
+    "Py/QuickSelect",
+    "Py/MergeIntervals",
+    "Py/InsertInterval",
+    "Py/PeakElement",
+    "Py/SearchRotated",
+    "Py/MatrixSearch",
+    "Py/FindMedianSortedArrays",
+    "Py/FibonacciMemo",
+    "Py/ClimbingStairs",
+    "Py/CoinChange",
+    "Py/LongestIncreasingSubseq",
+    "Py/HouseRobber",
+    "Py/LongestCommonSubseq",
+    "Py/UniquePathsGrid",
+    "Py/WordBreak",
+    "Py/EditDistance",
+    "Py/MaxSubarrayKadane",
+    "Py/ValidParentheses",
+    "Py/MinStack",
+    "Py/DailyTemperatures",
+    "Py/BinaryTreeInorder",
+    "Py/BinaryTreeMaxDepth",
+    "Py/InvertBinaryTree",
+    "Py/ValidateBST",
+    "Py/LowestCommonAncestor",
+    "Py/LevelOrderTraversal",
+    "Py/GraphBFS",
+    "Py/GraphDFS",
+    "Py/TopologicalSort",
+    "Py/DijkstraShortestPath",
+    "Py/TriePrefixTree",
+    "Py/LRUCache",
+    "Py/ValidAnagram",
+    "Py/ValidPalindrome",
+    "Py/LongestSubstringNoRepeat",
+    "Py/GroupAnagrams",
+    "Py/LongestPalindromicSubstring",
+    "Py/ReverseWords",
+    "Py/StringCompression",
+    "Py/SingleNumber",
+    "Py/CountingBits",
+    "Py/ReverseBits",
+    "Py/PowerOfTwo",
+    "Py/SievePrimes",
+    "Py/GCDLcm",
+    "Py/MatrixRotate90",
+    "Py/SpiralMatrix",
+    "Rust/OptionMap",
+    "Rust/HashMapWordCount",
+    "CPP/SmartPointerFactory",
+    "CPP/StringSplitView",
+    "Go/BinarySearchSlice",
+    "Go/StructJSONMarshal",
+    "Go/HTTPHandlerEndpoint",
+    "TypeScript/EventEmitterType",
+    "Agent/ToolCall/WriteFile",
+    "Agent/Debug/TypeErrorConcat",
+    "Agent/Debug/ZeroDivision",
+    "Agent/Debug/KeyErrorDict",
+    "Agent/Debug/MutableDefaultArg",
+    "Agent/Debug/AsyncMissingAwait",
+    "Agent/Diff/AddTypeHints",
+    "Agent/Diff/AddContextManager",
+    "Agent/Diff/AsyncFastAPIRoute"
+  ],
+  "skipped_baseline_fails": [],
+  "detailed_results": [
+    {
+      "id": "Py/BinarySearch",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 175.86143921385994,
+      "tps": 5.686294872089209
+    },
+    {
+      "id": "Py/LinearSearch",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 174.76181912274322,
+      "tps": 5.722073648693565
+    },
+    {
+      "id": "Py/TwoSumSorted",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 193.3739744604398,
+      "tps": 5.17132671441564
+    },
+    {
+      "id": "Py/QuickSelect",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.50202954321037,
+      "tps": 5.830834787573447
+    },
+    {
+      "id": "Py/MergeIntervals",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 218.53196965530515,
+      "tps": 4.575989506603176
+    },
+    {
+      "id": "Py/InsertInterval",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 169.98186278589336,
+      "tps": 5.882980593403575
+    },
+    {
+      "id": "Py/PeakElement",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 168.29900799951116,
+      "tps": 5.941805670078011
+    },
+    {
+      "id": "Py/SearchRotated",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.35253010118115,
+      "tps": 5.835921998989538
+    },
+    {
+      "id": "Py/MatrixSearch",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 174.23380584948046,
+      "tps": 5.739414318159898
+    },
+    {
+      "id": "Py/FindMedianSortedArrays",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.85132737005395,
+      "tps": 5.8189832764379075
+    },
+    {
+      "id": "Py/FibonacciMemo",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 180.7165061984437,
+      "tps": 5.533528846014243
+    },
+    {
+      "id": "Py/ClimbingStairs",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.77558341469347,
+      "tps": 5.855638025089951
+    },
+    {
+      "id": "Py/CoinChange",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 173.81989211509273,
+      "tps": 5.753081467441381
+    },
+    {
+      "id": "Py/LongestIncreasingSubseq",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 175.84910151448898,
+      "tps": 5.686693826625015
+    },
+    {
+      "id": "Py/HouseRobber",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 175.05139996397443,
+      "tps": 5.71260784093015
+    },
+    {
+      "id": "Py/LongestCommonSubseq",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 172.25860244361684,
+      "tps": 5.805225317135131
+    },
+    {
+      "id": "Py/UniquePathsGrid",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.89769537228028,
+      "tps": 5.851453981410453
+    },
+    {
+      "id": "Py/WordBreak",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 195.35979683938865,
+      "tps": 5.118760441904692
+    },
+    {
+      "id": "Py/EditDistance",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.2721251915874,
+      "tps": 5.83866171381587
+    },
+    {
+      "id": "Py/MaxSubarrayKadane",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 183.7437710398808,
+      "tps": 5.44236136191498
+    },
+    {
+      "id": "Py/ValidParentheses",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 172.6201628151882,
+      "tps": 5.79306602248213
+    },
+    {
+      "id": "Py/MinStack",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 172.21282835650655,
+      "tps": 5.806768343237758
+    },
+    {
+      "id": "Py/DailyTemperatures",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.37373799331755,
+      "tps": 5.8694491990263336
+    },
+    {
+      "id": "Py/BinaryTreeInorder",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 177.65158252857094,
+      "tps": 5.628995732921064
+    },
+    {
+      "id": "Py/BinaryTreeMaxDepth",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 194.52149352873676,
+      "tps": 5.140820080390085
+    },
+    {
+      "id": "Py/InvertBinaryTree",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 169.80132637878083,
+      "tps": 5.889235504375688
+    },
+    {
+      "id": "Py/ValidateBST",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 169.9854283143719,
+      "tps": 5.882857194974354
+    },
+    {
+      "id": "Py/LowestCommonAncestor",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 173.0964284403907,
+      "tps": 5.777126709141607
+    },
+    {
+      "id": "Py/LevelOrderTraversal",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 172.80374855701146,
+      "tps": 5.786911501344426
+    },
+    {
+      "id": "Py/GraphBFS",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.83358215658288,
+      "tps": 5.853650010589948
+    },
+    {
+      "id": "Py/GraphDFS",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 179.50578337393196,
+      "tps": 5.57085115144664
+    },
+    {
+      "id": "Py/TopologicalSort",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 196.97012727600384,
+      "tps": 5.076911985738594
+    },
+    {
+      "id": "Py/DijkstraShortestPath",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 169.94060981321894,
+      "tps": 5.884408683122276
+    },
+    {
+      "id": "Py/TriePrefixTree",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 174.48589824905088,
+      "tps": 5.731122171103244
+    },
+    {
+      "id": "Py/LRUCache",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 179.68033307198704,
+      "tps": 5.565439371705532
+    },
+    {
+      "id": "Py/ValidAnagram",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 176.15311497061606,
+      "tps": 5.676879458911692
+    },
+    {
+      "id": "Py/ValidPalindrome",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 166.3478439707043,
+      "tps": 6.011499615084348
+    },
+    {
+      "id": "Py/LongestSubstringNoRepeat",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 178.72596161985962,
+      "tps": 5.595158033766496
+    },
+    {
+      "id": "Py/GroupAnagrams",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.1558797280304,
+      "tps": 5.842627209705077
+    },
+    {
+      "id": "Py/LongestPalindromicSubstring",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.10289245019004,
+      "tps": 5.878794802344838
+    },
+    {
+      "id": "Py/ReverseWords",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.040335919816,
+      "tps": 5.846574111435339
+    },
+    {
+      "id": "Py/StringCompression",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.78895738574542,
+      "tps": 5.821095926174922
+    },
+    {
+      "id": "Py/SingleNumber",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 171.06581627989985,
+      "tps": 5.845703260573044
+    },
+    {
+      "id": "Py/CountingBits",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 180.7022202223287,
+      "tps": 5.5339663163498525
+    },
+    {
+      "id": "Py/ReverseBits",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.62082866406334,
+      "tps": 5.860949145716011
+    },
+    {
+      "id": "Py/PowerOfTwo",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 173.9039282372687,
+      "tps": 5.750301388451867
+    },
+    {
+      "id": "Py/SievePrimes",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 170.6996218826463,
+      "tps": 5.85824379088248
+    },
+    {
+      "id": "Py/GCDLcm",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 167.90454937810344,
+      "tps": 5.955764770542964
+    },
+    {
+      "id": "Py/MatrixRotate90",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 167.0136077495824,
+      "tps": 5.98753606651851
+    },
+    {
+      "id": "Py/SpiralMatrix",
+      "category": "Python/Algorithm",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 186.74568234526208,
+      "tps": 5.35487614728979
+    },
+    {
+      "id": "Rust/AsyncMPSC",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 169.24802681359535,
+      "tps": 5.908488381382252
+    },
+    {
+      "id": "Rust/BinarySearch",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 163.49146445460906,
+      "tps": 6.116527265419627
+    },
+    {
+      "id": "Rust/SafeMutex",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 164.3578242152356,
+      "tps": 6.084285946073641
+    },
+    {
+      "id": "Rust/CustomIterator",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 166.18099076171907,
+      "tps": 6.017535431798358
+    },
+    {
+      "id": "Rust/OptionMap",
+      "category": "Rust",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 161.0235018010896,
+      "tps": 6.210273586245118
+    },
+    {
+      "id": "Rust/StringReversal",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 162.47137498364532,
+      "tps": 6.154930369122943
+    },
+    {
+      "id": "Rust/HashMapWordCount",
+      "category": "Rust",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 161.09073295508728,
+      "tps": 6.207681731008102
+    },
+    {
+      "id": "Rust/AsyncHttpClient",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 161.4575277082622,
+      "tps": 6.193579291062236
+    },
+    {
+      "id": "Rust/EnumPatternMatch",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 162.60140042286366,
+      "tps": 6.150008532518077
+    },
+    {
+      "id": "Rust/TraitImplementation",
+      "category": "Rust",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 161.81015369231596,
+      "tps": 6.180081887206612
+    },
+    {
+      "id": "CPP/ThreadSafeQueue",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 161.8269370761342,
+      "tps": 6.179440938992334
+    },
+    {
+      "id": "CPP/BinarySearchVector",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 160.45225110764687,
+      "tps": 6.2323837347043725
+    },
+    {
+      "id": "CPP/SmartPointerFactory",
+      "category": "CPP",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 162.00433691533712,
+      "tps": 6.172674257002122
+    },
+    {
+      "id": "CPP/StringSplitView",
+      "category": "CPP",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 160.94880496295025,
+      "tps": 6.213155793422609
+    },
+    {
+      "id": "CPP/CustomComparatorSort",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 159.41149626965992,
+      "tps": 6.273073293963715
+    },
+    {
+      "id": "CPP/LRUNodeStructure",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 164.26224105346662,
+      "tps": 6.08782635368103
+    },
+    {
+      "id": "CPP/VariadicSumTemplate",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 162.0702141089938,
+      "tps": 6.170165230530825
+    },
+    {
+      "id": "CPP/AsyncFuturePromise",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 163.3366057702985,
+      "tps": 6.122326316773765
+    },
+    {
+      "id": "CPP/ConceptsConstraint",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 166.54356026914544,
+      "tps": 6.004435106250483
+    },
+    {
+      "id": "CPP/AtomicCounter",
+      "category": "CPP",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 172.01340496181868,
+      "tps": 5.813500408424373
+    },
+    {
+      "id": "Go/WorkerPoolChannels",
+      "category": "Go",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 177.42266209313163,
+      "tps": 5.636258571495709
+    },
+    {
+      "id": "Go/BinarySearchSlice",
+      "category": "Go",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 166.29220967073564,
+      "tps": 6.013510807151066
+    },
+    {
+      "id": "Go/StructJSONMarshal",
+      "category": "Go",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 164.25906238504328,
+      "tps": 6.087944162592856
+    },
+    {
+      "id": "Go/HTTPHandlerEndpoint",
+      "category": "Go",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 163.10505081469623,
+      "tps": 6.13101798506596
+    },
+    {
+      "id": "Go/SyncMutexSafeMap",
+      "category": "Go",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 165.18096929917542,
+      "tps": 6.053966169606392
+    },
+    {
+      "id": "TypeScript/GenericDebounce",
+      "category": "TypeScript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 167.44723152701877,
+      "tps": 5.972030656348255
+    },
+    {
+      "id": "TypeScript/PromiseRetry",
+      "category": "TypeScript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 163.29873909349914,
+      "tps": 6.123745997986152
+    },
+    {
+      "id": "TypeScript/DeepCloneGeneric",
+      "category": "TypeScript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 162.579584084093,
+      "tps": 6.150833794006743
+    },
+    {
+      "id": "TypeScript/EventEmitterType",
+      "category": "TypeScript",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 165.05795771506828,
+      "tps": 6.0584779664259045
+    },
+    {
+      "id": "TypeScript/ZodLikeValidator",
+      "category": "TypeScript",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 166.09893253144736,
+      "tps": 6.0205082884001735
+    },
+    {
+      "id": "Agent/ToolCall/Grep",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 194.0879084241505,
+      "tps": 5.15230447954876
+    },
+    {
+      "id": "Agent/ToolCall/ReadFile",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 194.63695234486033,
+      "tps": 5.137770541270019
+    },
+    {
+      "id": "Agent/ToolCall/WriteFile",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 188.68909856869973,
+      "tps": 5.299723235658527
+    },
+    {
+      "id": "Agent/ToolCall/RunCommand",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 196.36569505459383,
+      "tps": 5.092539202033119
+    },
+    {
+      "id": "Agent/ToolCall/ListDir",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 195.03211918553072,
+      "tps": 5.127360581303622
+    },
+    {
+      "id": "Agent/Debug/TypeErrorConcat",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 182.60540029116194,
+      "tps": 5.476289301441868
+    },
+    {
+      "id": "Agent/Debug/IndexOutOfBounds",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 182.75468553810452,
+      "tps": 5.47181593213652
+    },
+    {
+      "id": "Agent/Debug/ZeroDivision",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 174.99862322583795,
+      "tps": 5.714330670530403
+    },
+    {
+      "id": "Agent/Debug/KeyErrorDict",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 189.1698986089424,
+      "tps": 5.28625329586516
+    },
+    {
+      "id": "Agent/Debug/MutableDefaultArg",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 195.0100356596522,
+      "tps": 5.12794121911389
+    },
+    {
+      "id": "Agent/Debug/AsyncMissingAwait",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 184.0097593686854,
+      "tps": 5.43449436285812
+    },
+    {
+      "id": "Agent/Debug/RecursionDepth",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 181.15480666782594,
+      "tps": 5.520140582488918
+    },
+    {
+      "id": "Agent/Diff/AddLogging",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 178.0710776136922,
+      "tps": 5.615735095226426
+    },
+    {
+      "id": "Agent/Diff/AddTypeHints",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 191.3799210028215,
+      "tps": 5.225208552496253
+    },
+    {
+      "id": "Agent/Diff/ExtractHelperMethod",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 186.25539208931679,
+      "tps": 5.368972080660412
+    },
+    {
+      "id": "Agent/Diff/AddContextManager",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 180.7888088924055,
+      "tps": 5.531315827160181
+    },
+    {
+      "id": "Agent/Diff/FIMCompletion",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 166.43261837501387,
+      "tps": 6.008437587316883
+    },
+    {
+      "id": "Agent/Diff/DocstringGeneration",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 166.59091580853178,
+      "tps": 6.00272827090603
+    },
+    {
+      "id": "Agent/Diff/SQLInjectionFix",
+      "category": "CodingAgent",
+      "passed": true,
+      "baseline_passed": true,
+      "status_tag": "PASS",
+      "ttft_ms": 180.922645582434,
+      "tps": 5.527224061867749
+    },
+    {
+      "id": "Agent/Diff/AsyncFastAPIRoute",
+      "category": "CodingAgent",
+      "passed": false,
+      "baseline_passed": true,
+      "status_tag": "TARGET TRACE (Pruning Degradation)",
+      "ttft_ms": 174.18879854958504,
+      "tps": 5.740897281149438
+    }
+  ]
+}

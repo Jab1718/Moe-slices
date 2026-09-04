@@ -1,0 +1,41 @@
+# Model Weights & Massive Checkpoints
+*.safetensors
+*.pt
+*.bin
+*.pth
+*.onnx
+qwen3.8_flash_bf16_73gb/
+qwen3.8_raw_cache/
+qwen3.8_flash_raw_extracted/
+qwen3.8_flash_finetuned_26gb
+qwen3.8_flash_sliced_26gb
+benchmark_outputs/
+checkpoints/
+
+# Virtual Environments & Caches
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Data and Artifact Dumps
+data/
+*.jsonl
+*.log
+*.csv
+scratch/
+
+# Build & Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# IDE & OS Files
+.DS_Store
+.vscode/
+.idea/
+*.swp
