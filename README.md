@@ -5,6 +5,7 @@
 [![PyTorch 2.2+](https://img.shields.io/badge/PyTorch-2.2%2B-red.svg)](https://pytorch.org/)
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Jab1718%2Fqwen3.8--flash--coder--85gb--bf16-yellow)](https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16)
 [![Hugging Face INT8 Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Jab1718%2Fqwen3.8--flash--coder--44gb--selective--int8-purple)](https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8)
+[![Hugging Face GGUF Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Jab1718%2Fqwen3.8--flash--coder--26gb--gguf-green)](https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb-gguf)
 
 > **A specialized framework to mathematically profile, plan, and stream-extract domain-specific subnets from monolithic Deep Sparse MoE LLMs (335GB+, 512 experts/layer) into hardware-aligned subnets runnable on local workstations.**
 
@@ -151,6 +152,7 @@ moe-slice eval --model-path "./qwen3.8_flash_coder_85gb_bf16"
 | :--- | :---: | :---: | :---: | :--- | :--- |
 | **`qwen3.8-flash-coder-85gb-bf16`** | BF16 | **91.0%** (91/100) | **85.24 GB** (2 Shards) | 3x RTX 5000 Ada (32GB) or 4x RTX 4090 (24GB) | [🤗 Jab1718/qwen3.8-flash-coder-85gb-bf16](https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16) |
 | **`qwen3.8-flash-coder-44gb-selective-int8`** | Selective INT8 (Router BF16) | **83.0%** (83/100) | **44.29 GB** (2 Shards) | 2x RTX 5000 Ada (32GB) or 2x RTX 4090 (24GB) | [🤗 Jab1718/qwen3.8-flash-coder-44gb-selective-int8](https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8) |
+| **`qwen3.8-flash-coder-26gb-gguf`** | GGUF (Q4_K_M & Q8_0) | **83.0%** (Q8_0) / ~78% (Q4) | **26.43 GB** (Q4) / **42.25 GB** (Q8) | **1x RTX 3090/4090 (24GB)** / Apple Silicon Mac | [🤗 Jab1718/qwen3.8-flash-coder-26gb-gguf](https://huggingface.co/Jab1718/qwen3.8-flash-coder-26gb-gguf) |
 
 ### 📊 Comparative Benchmark Breakdown (100 Multi-Language Tasks)
 
