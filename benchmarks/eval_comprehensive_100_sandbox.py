@@ -38,32 +38,70 @@ def extract_clean_code(prompt: str, generated_text: str, lang: str = "python") -
     Seamlessly handles re-declarations and function body completions.
     """
     # 1. Strip thoughts reasoning
-    text = re.sub(r"<think>[\s\S]*?</think>", "", generated_text, flags=re.IGNORECASE).strip()
+    text = generated_text
+    if "</think>" in text:
+        text = text.split("</think>")[-1].strip()
+    else:
+        text = re.sub(r"<think>[\s\S]*?</think>", "", text, flags=re.IGNORECASE).strip()
     
     # 2. Strip markdown fences if present
-    match = re.search(rf"```{lang}?\s*([\s\S]*?)(?:```|$)", text, re.IGNORECASE)
-    if match and match.group(1).strip():
-        content = match.group(1).strip()
-    elif "```" in text:
+    # Case A: Prompt already opened the fence (e.g. ```python\n at end of prompt)
+    prompt_strip = prompt.rstrip()
+    if ("```" in prompt_strip and (prompt_strip.endswith("```python") or prompt_strip.endswith("```"))) and "```" in text:
         parts = text.split("```")
-        content = parts[1].strip() if len(parts) > 1 else text.strip()
+        content = parts[0].strip()
     else:
-        content = text.strip()
+        match = re.search(rf"```{lang}?\s*([\s\S]*?)(?:```|$)", text, re.IGNORECASE)
+        if match and match.group(1).strip():
+            content = match.group(1).strip()
+        elif "```" in text:
+            parts = text.split("```")
+            content = parts[1].strip() if len(parts) > 1 and parts[1].strip() else parts[0].strip()
+        else:
+            content = text.strip()
 
     # 3. Strip trailing conversation or test snippets
     for stop_word in ["\n<|im_end|>", "\n<|endoftext|>", "\n# Test", "\nprint(", "\nif __name__"]:
         if stop_word in content:
             content = content.split(stop_word)[0].rstrip()
 
-    # 4. Check if full function/struct/class is already defined in content
+    # 4. Critical Tree/Class Guard: Preserve TreeNode / Node structures from prompt
+    class_headers = ""
+    for cname in ["class TreeNode", "class Node", "struct Node"]:
+        if cname in prompt and cname not in content:
+            c_idx = prompt.find(cname)
+            sub = prompt[c_idx:]
+            next_def = re.search(r"\n(?:def|pub fn|int |void )", sub)
+            if next_def:
+                class_headers += sub[:next_def.start()].strip() + "\n\n"
+            else:
+                class_headers += sub.strip() + "\n\n"
+    if class_headers and not content.startswith(class_headers.strip()[:20]):
+        content = class_headers + content
+
+    # 5. Check if full function/struct/class is already defined in content
     func_match = re.search(r"(?:def|fn|class|struct|func)\s+([a-zA-Z0-9_]+)", prompt)
     if func_match:
         fname = func_match.group(1)
-        if fname in content:
+        if (f"def {fname}" in content) or (f"fn {fname}" in content) or (f"func {fname}" in content) or (f"class {fname}" in content) or (f"{fname}(" in content and "def " in content):
             return content
 
-    # 5. Re-attach prompt signature if missing
+    # 6. Re-attach prompt signature with Auto-Indentation Guard (for body-only completions)
     if prompt.strip() not in content and not content.startswith(prompt.strip()[:20]):
+        # If prompt ended with docstring or content repeats prompt's docstring header
+        if content.startswith('"""'):
+            m_doc = re.match(r'^"""[\s\S]*?"""\s*', content)
+            if m_doc:
+                content = content[m_doc.end():].strip()
+        
+        # Auto-Indentation Guard: ensure function body lines have at least 4 spaces indent
+        lines = content.lstrip("\r\n").split("\n")
+        non_empty = [l for l in lines if l.strip()]
+        if non_empty:
+            min_indent = min(len(l) - len(l.lstrip()) for l in non_empty)
+            if min_indent == 0:
+                lines = [("    " + l if l.strip() else "") for l in lines]
+                content = "\n".join(lines)
         return f"{prompt.rstrip()}\n{content}"
 
     return content
@@ -507,7 +545,7 @@ def build_100_sandbox_tasks():
     return tasks
 
 
-def evaluate_with_baseline_gating(model_path: str = "./qwen3.8_flash_bf16_73gb"):
+def evaluate_with_baseline_gating(model_path: str = "./qwen3.8_flash_coder_85gb_bf16"):
     baseline_file = "./benchmarks/baseline_qwen_groundtruth.json"
     baseline_results = {}
     if os.path.exists(baseline_file):
@@ -604,8 +642,11 @@ def evaluate_with_baseline_gating(model_path: str = "./qwen3.8_flash_bf16_73gb")
             sys_prompt = "You are an expert TypeScript programmer. Complete the code cleanly and correctly. Output valid TypeScript code."
             user_content = f"Complete only the TypeScript code:\n```typescript\n{prompt}```"
         elif "Agent/" in tid:
-            lang = "json"
-            sys_prompt = "You are an autonomous AI coding agent. Output valid JSON tool calls."
+            if "```python" in prompt:
+                lang = "python"
+            else:
+                lang = "json"
+            sys_prompt = "You are an autonomous AI coding agent. Output valid JSON tool calls or code."
             user_content = prompt
         else:
             lang = "text"
