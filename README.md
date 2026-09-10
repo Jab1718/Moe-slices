@@ -4,6 +4,7 @@
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-green.svg)](https://www.python.org/)
 [![PyTorch 2.2+](https://img.shields.io/badge/PyTorch-2.2%2B-red.svg)](https://pytorch.org/)
 [![Hugging Face Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Jab1718%2Fqwen3.8--flash--coder--85gb--bf16-yellow)](https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16)
+[![Hugging Face INT8 Model](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Jab1718%2Fqwen3.8--flash--coder--44gb--selective--int8-purple)](https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8)
 
 > **A specialized framework to mathematically profile, plan, and stream-extract domain-specific subnets from monolithic Deep Sparse MoE LLMs (335GB+, 512 experts/layer) into hardware-aligned subnets runnable on local workstations.**
 
@@ -146,13 +147,22 @@ moe-slice eval --model-path "./qwen3.8_flash_coder_85gb_bf16"
 
 ## 📦 Checkpoints & Model Zoo
 
-| Checkpoint Name | Precision | Parameter Count | Footprint on Disk | Target Hardware |
-| :--- | :---: | :---: | :---: | :--- |
-| **`qwen3.8-flash-coder-85gb-bf16`** | BF16 | ~48B Total (5B Active) | **85.24 GB (2 Shards)** | 3x RTX 5000 Ada (32GB) or 4x RTX 4090 (24GB) |
-| **`qwen3.8-flash-coder-selective-int8`** | INT8 / BF16 | ~48B Total (5B Active) | **~19.72 GB Total** | **1x RTX 5000 Ada / RTX 4090 (24GB)** |
+| Checkpoint Name | Precision | Pass@1 (100 Sandbox) | Disk / VRAM Footprint | Target Hardware | Hugging Face Repository |
+| :--- | :---: | :---: | :---: | :--- | :--- |
+| **`qwen3.8-flash-coder-85gb-bf16`** | BF16 | **91.0%** (91/100) | **85.24 GB** (2 Shards) | 3x RTX 5000 Ada (32GB) or 4x RTX 4090 (24GB) | [🤗 Jab1718/qwen3.8-flash-coder-85gb-bf16](https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16) |
+| **`qwen3.8-flash-coder-44gb-selective-int8`** | Selective INT8 (Router BF16) | **83.0%** (83/100) | **44.29 GB** (2 Shards) | 2x RTX 5000 Ada (32GB) or 2x RTX 4090 (24GB) | [🤗 Jab1718/qwen3.8-flash-coder-44gb-selective-int8](https://huggingface.co/Jab1718/qwen3.8-flash-coder-44gb-selective-int8) |
 
-Hugging Face Checkpoint:  
-👉 [https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16](https://huggingface.co/Jab1718/qwen3.8-flash-coder-85gb-bf16)
+### 📊 Comparative Benchmark Breakdown (100 Multi-Language Tasks)
+
+| Domain / Language | Benchmark Suite | 85GB BF16 Subnet | 44GB Selective-INT8 Subnet | Retention / Delta |
+| :--- | :---: | :---: | :---: | :---: |
+| 🦀 **Rust (Systems)** | 10 Tasks | **100.0%** (10/10) | **100.0%** (10/10) | **100% Lossless** |
+| ⚡ **C++20 (Modern)** | 10 Tasks | **100.0%** (10/10) | **100.0%** (10/10) | **100% Lossless** |
+| 🌐 **TypeScript (Fullstack)** | 5 Tasks | **100.0%** (5/5) | **80.0%** (4/5) | -1 Task |
+| 🤖 **Coding Agent (Diff/Bugfix)**| 20 Tasks | **100.0%** (20/20) | **80.0%** (16/20) | -4 Tasks |
+| 🐍 **Python Algorithms** | 50 Tasks | **84.0%** (42/50) | **78.0%** (39/50) | -3 Tasks |
+| 🐹 **Go (Systems)** | 5 Tasks | **80.0%** (4/5) | **80.0%** (4/5) | **100% Lossless** |
+| 🏆 **Total Overall** | **100 Tasks** | **91.0%** (91/100) | **83.0%** (83/100) | **91.2% Capability Retention** |
 
 ---
 
