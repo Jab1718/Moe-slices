@@ -29,7 +29,9 @@ data/
 *.jsonl
 *.log
 *.csv
+*.pkl
 scratch/
+codebase_rag/storage/
 
 # Build & Packaging
 build/
