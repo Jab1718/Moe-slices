@@ -1,0 +1,27 @@
+FROM ./qwen3.8-flash-coder-26gb-q4_k_m.gguf
+
+TEMPLATE """{{- if .System }}<|im_start|>system
+{{ .System }}<|im_end|>
+{{- end }}
+{{- range .Messages }}
+<|im_start|>{{ .Role }}
+{{- if and (eq .Role "assistant") (ne .Thinking "") }}
+<think>
+{{ .Thinking }}
+</think>
+
+{{ .Content }}<|im_end|>
+{{- else }}
+{{ .Content }}<|im_end|>
+{{- end }}
+{{- end }}
+<|im_start|>assistant
+<think>
+"""
+
+PARAMETER stop "<|im_start|>"
+PARAMETER stop "<|im_end|>"
+PARAMETER stop "<|endoftext|>"
+PARAMETER temperature 0.2
+PARAMETER top_p 0.95
+PARAMETER num_ctx 32768
